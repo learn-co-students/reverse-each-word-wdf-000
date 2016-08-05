@@ -6,4 +6,16 @@ def reverse_each_word(string)
 	each_word.join(" ")
 end
 
-reverse_each_word("hello there, and how are you?")
+
+
+def reverse_each_word(string)
+	x = string.split(" ")
+	x.map do |word|
+		word.reverse!
+	end
+	x.join(" ")
+end
+
+def reverse_each_word(string)
+  string.split(" ").collect {|word| word.reverse}.join(" ")
+end
